@@ -1,0 +1,204 @@
+{
+ "kind": "note_signoff",
+ "session_id": "8b158ac38ac2fbce0b129376",
+ "signed_by": "I Sharma",
+ "signed_at": "2026-10-20T11:12:04+00:00",
+ "note": {
+  "sections": {
+   "subjective": [
+    {
+     "id": "S01",
+     "text": "The patient came to you yesterday for fever.",
+     "assertion_ids": [
+      "A01"
+     ],
+     "kind": "fact",
+     "edited": false
+    }
+   ],
+   "family_history": [],
+   "objective": [],
+   "assessment": [],
+   "plan": []
+  },
+  "not_captured": [
+   "Physical examination (no findings spoken)",
+   "Respiratory examination",
+   "Cardiovascular examination",
+   "Abdominal examination",
+   "Neurological examination",
+   "Vital sign: Temperature",
+   "Vital sign: Blood pressure",
+   "Vital sign: Pulse / heart rate",
+   "Vital sign: Oxygen saturation",
+   "Vital sign: Respiratory rate",
+   "Assessment / diagnosis"
+  ]
+ },
+ "assertions": [
+  {
+   "entity": "symptom",
+   "type": "symptom",
+   "polarity": "affirmed",
+   "experiencer": "patient",
+   "family_relation": null,
+   "temporality": "current",
+   "certainty": "stated",
+   "action": null,
+   "dose": null,
+   "unit": null,
+   "frequency": null,
+   "route": null,
+   "duration": null,
+   "timing_of_day": null,
+   "with_food": null,
+   "value": null,
+   "condition": "fever",
+   "utterance_ids": [
+    "U01"
+   ],
+   "quote": "I came to you yesterday for fever.",
+   "flag": "none",
+   "flag_reasons": [],
+   "id": "A01",
+   "speaker_role": "patient",
+   "spans": [
+    {
+     "start_ms": 2480,
+     "end_ms": 3980,
+     "utterance_id": "U01"
+    }
+   ],
+   "frequency_code": null,
+   "repaired_terms": [],
+   "candidates": [],
+   "quote_verified": true,
+   "origin": "extraction",
+   "heard_term": null
+  }
+ ],
+ "summary": null,
+ "provenance": {
+  "app_version": "0.9.0",
+  "prompt_versions": {
+   "roles": "roles-v3",
+   "extraction": "extract-v5",
+   "composer": "compose-v4",
+   "precision": "precision-v2",
+   "omission": "omission-v3",
+   "patient_prose": "prose-v3",
+   "no_new_content": "nonew-v2",
+   "translate": "translate-v2",
+   "back_translate": "backtrans-v2",
+   "baseline": "baseline-v2"
+  },
+  "audio_sha256_original": "5741c99cbb7f2a2b4d405932ec91926f7e6dec59efcb979608cfc8934174cf8f",
+  "audio_sha256_16k": "2964a3630a67d95efbaa5509d3a574876be59af9d4d0a7bf01f2235456bac8d7",
+  "asr_provider": "faster_whisper",
+  "llm_provider": "openai_compatible",
+  "verifier_provider": "openai_compatible",
+  "generator_model": "qwen2.5:7b",
+  "verifier_model": "llama3.1:8b",
+  "demo_fixture": false,
+  "consent": true,
+  "consent_at": "2026-10-20T11:08:32+00:00",
+  "stages": {
+   "asr": {
+    "at": "2026-10-20T11:08:42+00:00",
+    "calls": [
+     {
+      "stage": "asr",
+      "provider": "faster_whisper",
+      "model": "small",
+      "latency_ms": 9378
+     }
+    ]
+   },
+   "roles": {
+    "at": "2026-10-20T11:10:17+00:00",
+    "calls": [
+     {
+      "stage": "roles",
+      "role": "GENERATOR",
+      "provider": "openai_compatible",
+      "model": "qwen2.5:7b",
+      "prompt_version": "roles-v3",
+      "cache": "miss",
+      "attempts": 1,
+      "latency_ms": 95077,
+      "cache_key": "347404eafa53c39b"
+     }
+    ]
+   },
+   "extraction": {
+    "at": "2026-10-20T11:10:27+00:00",
+    "calls": [
+     {
+      "stage": "extraction",
+      "role": "GENERATOR",
+      "provider": "openai_compatible",
+      "model": "qwen2.5:7b",
+      "prompt_version": "extract-v5",
+      "cache": "miss",
+      "attempts": 1,
+      "latency_ms": 10039,
+      "cache_key": "bd96e87d24b8e7c0"
+     }
+    ]
+   },
+   "composer": {
+    "at": "2026-10-20T11:10:32+00:00",
+    "calls": [
+     {
+      "stage": "composer",
+      "role": "GENERATOR",
+      "provider": "openai_compatible",
+      "model": "qwen2.5:7b",
+      "prompt_version": "compose-v4",
+      "cache": "miss",
+      "attempts": 1,
+      "latency_ms": 5445,
+      "cache_key": "cfad750959f813c1"
+     }
+    ]
+   },
+   "verification": {
+    "at": "2026-10-20T11:11:15+00:00",
+    "calls": [
+     {
+      "stage": "precision",
+      "role": "VERIFIER",
+      "provider": "openai_compatible",
+      "model": "llama3.1:8b",
+      "prompt_version": "precision-v2",
+      "cache": "miss",
+      "attempts": 1,
+      "latency_ms": 37586,
+      "cache_key": "a0e66a46293feb22"
+     },
+     {
+      "stage": "omission",
+      "role": "VERIFIER",
+      "provider": "openai_compatible",
+      "model": "llama3.1:8b",
+      "prompt_version": "omission-v3",
+      "cache": "miss",
+      "attempts": 1,
+      "latency_ms": 5367,
+      "cache_key": "6447f758954aec04"
+     }
+    ]
+   }
+  },
+  "doctor_events": [
+   {
+    "at": "2026-10-20T11:12:04+00:00",
+    "kind": "sign_off",
+    "target": "I Sharma",
+    "detail": null
+   }
+  ]
+ },
+ "version": 1,
+ "content_hash": "fd36b7673c52bd6cdcae3349c81483d7c2232f4932dc2e6a487ac55f0530112a"
+}
