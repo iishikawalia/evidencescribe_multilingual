@@ -1,0 +1,78 @@
+{
+ "lang": "hinglish",
+ "generated_at": "2026-10-20T11:45:22+00:00",
+ "basis_version": 1,
+ "doctor": "I Sharma",
+ "visit_date": "2026-10-20",
+ "patient": "Ramesh Kumar (synthetic)",
+ "prose": {
+  "why_you_came": "Aap ne aaya ki aapke pas ek dhyan rakha jata hai khaak ho.",
+  "what_doctor_said": "Doctor aapko badal gaya aur unhone kahaya ki aapki viral aagyan kaam kar rahi ho.",
+  "home_care": "Aapki liye baad mein dhaakha aur paani peetna zaroori hai."
+ },
+ "back_translation": {
+  "why_you_came": "You came because you have a cough that has been bothering you.",
+  "what_doctor_said": "The doctor examined you and found that you may have a viral upper respiratory infection.",
+  "home_care": "You should get plenty of rest and drink fluids."
+ },
+ "medicines": {
+  "current": [],
+  "only_if": [],
+  "stop": []
+ },
+ "tests": [],
+ "follow_up": [],
+ "warning_signs": [],
+ "questions": [],
+ "gates": [
+  {
+   "id": "number_lock",
+   "ok": true,
+   "detail": "every locked number and drug name re-inserted exactly once"
+  },
+  {
+   "id": "readability",
+   "ok": true,
+   "detail": "English source grade 6.1; readability formula not computed for Hinglish"
+  },
+  {
+   "id": "back_translation",
+   "ok": false,
+   "detail": "meaning changed: 'khaak ho' (cough) instead of 'a cough that has been bothering you'; meaning changed: 'viral aagyan kaam kar rahi ho' (viral upper respiratory infection) instead of 'you may have a viral upper respiratory infection'; meaning changed: 'dhaakha' (rest) instead of 'plenty of rest'; meaning changed: 'paani peetna' (drink fluids) instead of 'drink fluids'"
+  },
+  {
+   "id": "must_confirm",
+   "ok": true,
+   "detail": "built from signed version v1 (all must-confirm items confirmed)"
+  }
+ ],
+ "approved": false,
+ "approved_by": null,
+ "approved_at": null,
+ "demo_fixture": false,
+ "provenance": [
+  {
+   "stage": "translate:hinglish",
+   "role": "GENERATOR",
+   "provider": "openai_compatible",
+   "model": "qwen2.5:7b",
+   "prompt_version": "translate-v2",
+   "cache": "miss",
+   "attempts": 1,
+   "latency_ms": 19057,
+   "cache_key": "29c6bd1b4ed1898e"
+  },
+  {
+   "stage": "back_translate:hinglish",
+   "role": "VERIFIER",
+   "provider": "openai_compatible",
+   "model": "llama3.1:8b",
+   "prompt_version": "backtrans-v2",
+   "cache": "miss",
+   "attempts": 1,
+   "latency_ms": 24496,
+   "cache_key": "951e4e807660d447"
+  }
+ ],
+ "gates_ok": false
+}
