@@ -1,0 +1,36 @@
+{
+ "id": "66bc2a3a0ea4759f2baacb1b",
+ "created": "2026-10-20T12:14:00+00:00",
+ "consult_id": "consult_02_gastritis",
+ "consent": true,
+ "consent_at": "2026-10-20T12:14:00+00:00",
+ "audio_file": null,
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Sunita Devi (synthetic)",
+   "age": 41,
+   "sex": "female",
+   "mrn": "DEMO-0002"
+  },
+  "active_medications": [
+   {
+    "name": "pantoprazole",
+    "dose": "40",
+    "unit": "mg",
+    "frequency": "OD"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "sulfa",
+    "reaction": "hives"
+   }
+  ],
+  "problem_list": [
+   "Gastritis"
+  ],
+  "prior_note_excerpt": "Visit 2026-08-01: epigastric pain, started pantoprazole 40 mg OD for 4 weeks."
+ },
+ "eval": true
+}
